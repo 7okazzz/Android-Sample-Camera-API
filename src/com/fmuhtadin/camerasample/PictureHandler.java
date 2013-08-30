@@ -51,6 +51,8 @@ public class PictureHandler implements PictureCallback {
 	            + error.getMessage());
 	        Toast.makeText(context, "Image could not be saved.",
 	            Toast.LENGTH_LONG).show();
+	      } finally {
+	    	  camera.startPreview();
 	      }
 		
 	}
